@@ -1,0 +1,48 @@
+2018-04-09  Jérôme Pasquier  <rainbru@free.fr>
+
+	* SettingsActivity.java (feedPrinterList): fix a bug when
+	index is -1.
+	* PrinterList.java (isCertificateTrusted): automatically trust new
+	cert.
+	* PrinterList.java (isCertificateTrusted): finally get the server
+	certificate.
+	* UntrustedCertActivity.java : add new class.
+
+2018-04-08  Jérôme Pasquier  <rainbru@free.fr>
+
+	* NewHostDialog.java (NewHostDialog): removed class.
+	* SettingsActivity.java (onPreferenceChange): now uses cups activity.
+	HostNotVerifiedActivity.
+	* NewHostDialog.java (NewHostDialog): trying to create a confirmation
+	dialog.
+	* app/src/main/AndroidManifest.xml: fix CupsPrintApp nll instance issue.
+	* app/src/main/java/org/rainbrurpg/transparentcupsclient/PrinterList.java:
+	trying to get job list.
+	* app/src/main/java/org/rainbrurpg/transparentcupsclient/MainActivity.java:
+	trying to fix certification issue.
+
+2018-04-07  Jérôme Pasquier  <rainbru@free.fr>
+
+	* app/src/main/java/org/rainbrurpg/transparentcupsclient/PrinterList.java: start to implement verifyHost.
+	* app/src/main/java/org/rainbrurpg/transparentcupsclient/MainActivity.java: manually call selected printer.
+	* app/src/main/java/org/rainbrurpg/transparentcupsclient/MainActivity.java: get filedescriptor to print file.
+	* app/src/main/java/org/cups4j/CupsClient.java: start to get printer
+	from list.
+	* app/src/main/java/org/rainbrurpg/transparentcupsclient/MainActivity.java: finally get external storage permission.
+	* app/src/main/java/org/rainbrurpg/transparentcupsclient/MainActivity.java: get intent extra file name and printer URI.
+	* app/src/main/java/org/rainbrurpg/transparentcupsclient/SettingsActivity.java: set selected printer as printerlist summary.
+
+2018-04-06  Jérôme Pasquier  <rainbru@free.fr>
+
+	* app/src/main/java/org/rainbrurpg/transparentcupsclient/SettingsActivity.java: searching for printers works.
+	* app/build.gradle: add jmdns dependency.
+	* app/src/main/java/org/rainbrurpg/transparentcupsclient/MainActivity.java: uses logger.
+	* app/src/main/res/values/cups.xml (resources): add some needed ids.
+
+2018-04-05  Jérôme Pasquier  <rainbru@free.fr>
+
+	* app/src/main/java/org/rainbrurpg/transparentcupsclient/app/: multiple
+	new sources added.
+	* app/src/main/java/org/rainbrurpg/transparentcupsclient: add new
+	AndroidCupsPrint files.
+	* app/build.gradle: fix application id.

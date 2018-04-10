@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.rainbrurpg.transparentcupsclient">
+
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  
+  <application
+      android:name="org.rainbrurpg.transparentcupsclient.CupsPrintApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/jpeg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Transparent CUPS client">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+	<activity
+            android:name=".app.HostNotVerifiedActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:label="@string/host_not_verified_activity_title"
+	    android:theme="@style/TransparentCupsClient.AlertDialog"/>
+
+	<activity
+            android:name=".app.UntrustedCertActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:label="@string/untrusted_title"
+            android:theme="@style/TransparentCupsClient.AlertDialog"/>
+  </application>
+
+</manifest>

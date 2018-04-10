@@ -1,0 +1,6 @@
+<lint>
+  <!-- We're targetting a given SDK version -->
+  <issue id="OldTargetApi" severity="ignore" />
+  <!-- It's a private app. not needed -->
+  <issue id="GoogleAppIndexingWarning" severity="ignore" />
+</lint>
