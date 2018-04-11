@@ -5,6 +5,11 @@ android-intent-cups-client - GPLv3 - android print inent.
 
 === ChangeLog ===
    (6 items by revision)
+   SLOC is `sloccoutn src` (run a `make clean` in src/trans... before)
+   Ut is FAIL|SUCCESS (run `make check` in src/trans...)
 
-* v0.0.0-1 (Mar. 10 Apr. 2017 - ???)
+
+* v0.0.0-1 (Mar. 10 Apr. 2017 - ???) SLOC ?,??? FT ??:?? UT ???
+- (3) Make the MainActivity transparent
+- MainActivity wait 3 seconds and finish
 - Add basic README and COPYING   

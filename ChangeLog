@@ -1,5 +1,6 @@
 2018-04-11  Jérôme Pasquier  <rainbru@free.fr>
 
+	* styles.xml (Theme.Transparent): make the MainActivity transparent.
 	* MainActivity.java (waitAndFinish): wait 3 seconds and finish.
 
 2018-04-09  Jérôme Pasquier  <rainbru@free.fr>
