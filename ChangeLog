@@ -1,5 +1,6 @@
 2018-04-11  Jérôme Pasquier  <rainbru@free.fr>
 
+	* .travis.yml: add travis-ci support.
 	* activity_main.xml (android:textSize): change text size.
 	* activity_main2.xml: renamed to activity_main.xml.
 	* styles.xml (Theme.Transparent): make the MainActivity transparent.

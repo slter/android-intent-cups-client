@@ -22,15 +22,18 @@
 - [ ] HostNotVerifiedActivity is not really a dialog
   Its theme should be defined by
   android:theme="@style/AndroidCupsPrint.AlertDialog"
-
 **** TODO Correct project setup
+     CLOCK: [2018-04-11 mer. 16:48]
      CLOCK: [2018-04-10 mar. 16:40]--[2018-04-10 mar. 17:00] =>  0:20
 - [X] Add a README.md file
 - [X] Add a GPLv3 licence file
 - [X] Rename activity_main2.xml
 - [ ] May rename application (Currently transparent-cups-client)
+  Drawn name could be "CUPS intent"
 - [ ] May use travis-ci and others here
+  - [ ] travis is supported
   https://docs.travis-ci.com/user/languages/android/
+  - [ ] Maybe coverity scan ?, codecov and codacy
 **** DONE Main activity should finish if print successfull
      CLOCK: [2018-04-11 mer. 14:09]--[2018-04-11 mer. 15:23] =>  1:14
 - [X] Check for result of IppResult : a PrintRequestResult
