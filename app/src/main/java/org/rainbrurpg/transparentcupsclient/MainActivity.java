@@ -27,6 +27,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.AsyncTask;
 import android.os.Environment;
+import android.os.Handler;
 import android.widget.TextView;
 import android.print.PrintManager;
 import android.content.SharedPreferences;
@@ -211,11 +212,22 @@ public void onRequestPermissionsResult(int requestCode, String permissions[], in
         } else if (e instanceof NullPrinterException) {
             Toast.makeText(this, "Null printer", Toast.LENGTH_LONG).show();
         } else {
-            Toast.makeText(this, e.getLocalizedMessage(), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Erreur d'impression", Toast.LENGTH_LONG).show();
 	    L.e("Printing job exception : ", e);
         }
+	waitAndFinish();
     }
 
+    
+    void waitAndFinish() {
+	// Wait and finish
+	Handler handler = new Handler();
+	handler.postDelayed(new Runnable() {
+                public void run() {
+                    finish();
+                }
+	    }, 3000); // 3 seconds
+    }
 	
     /**
      * Called from a background thread, when the print job has to be sent to the printer.
@@ -242,8 +254,14 @@ public void onRequestPermissionsResult(int requestCode, String permissions[], in
 	L.w("PrintJob is :" + job);
 	
 	PrintRequestResult result = printer.print(job);
-	//        mJobs.put(jobId, result.getJobId());
 	L.w("PrintResult :" + result);
+	if (result.isSuccessfulResult()) {
+	    finish();
+	} else {
+            Toast.makeText(this, result.getResultDescription(),
+			   Toast.LENGTH_LONG).show();
+	    waitAndFinish();
+	}
     }
 
     private static class NullPrinterException extends Exception {
