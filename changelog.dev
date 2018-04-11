@@ -1,0 +1,7 @@
+* v0.0.0-1 (10 Apr. 2017 - 11 Apr. 2017) SLOC 5,087 FT 2:27 UT ???
+- Add travis-ci support and badge
+- Change MainActivity text size
+- Renamed activity_main2.xml
+- Make the MainActivity transparent
+- MainActivity wait 3 seconds and finish
+- Add basic README and COPYING

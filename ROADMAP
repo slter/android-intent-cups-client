@@ -23,7 +23,7 @@
   Its theme should be defined by
   android:theme="@style/AndroidCupsPrint.AlertDialog"
 **** TODO Correct project setup
-     CLOCK: [2018-04-11 mer. 16:48]
+     CLOCK: [2018-04-11 mer. 16:48]--[2018-04-11 mer. 17:41] =>  0:53
      CLOCK: [2018-04-10 mar. 16:40]--[2018-04-10 mar. 17:00] =>  0:20
 - [X] Add a README.md file
 - [X] Add a GPLv3 licence file
@@ -34,6 +34,11 @@
   - [ ] travis is supported
   https://docs.travis-ci.com/user/languages/android/
   - [ ] Maybe coverity scan ?, codecov and codacy
+
+- [ ] travis-ci build fails
+A problem occurred configuring project ':app'.
+> You have not accepted the license agreements of the following SDK components:
+  [Android SDK Platform 26, Android SDK Build-Tools 26.0.2].
 
 - [ ] We have a failling InstrumentedTest
   org.rainbrurpg.transparentcupsclient.ExampleInstrumentedTest > useAppContext[SM-T580 - 7.0] FAILED 

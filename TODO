@@ -7,12 +7,8 @@ android-intent-cups-client - GPLv3 - android print inent.
    (6 items by revision)
    SLOC is `sloccoutn src` (run a `make clean` in src/trans... before)
    Ut is FAIL|SUCCESS (run `make check` in src/trans...)
+   Add a git tag for r-1 then `git push origin {tag}`
+   
 
+* v0.0.0-2 (11 Apr. 2017 - ???) SLOC ?,??? FT ?:?? UT ???
 
-* v0.0.0-1 (Mar. 10 Apr. 2017 - ???) SLOC ?,??? FT ??:?? UT ???
-- (6) Add travis-ci support and badge
-- Change MainActivity text size
-- Renamed activity_main2.xml
-- Make the MainActivity transparent
-- MainActivity wait 3 seconds and finish
-- Add basic README and COPYING   
