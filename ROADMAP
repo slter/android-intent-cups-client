@@ -9,13 +9,20 @@
 - [ ] MainActivity waitAndFinish time could come from settingsActivity
 - [ ] transparency and background color of MainActivity
 - [ ] "Impression en cours" text size
-**** TODO Main activity should finish if print successfull
-     CLOCK: [2018-04-11 mer. 14:09]--[2018-04-11 mer. 15:23] =>  1:14
-- [X] Check for result of IppResult : a PrintRequestResult
-  from app/src/main/java/org/cups4j/PrintRequestResult.java
-- [X] Should show printer URL in case of error but a text  
-- [X] MainActivity should be transparent
-- [X] "Impression en cours" should be bigger
+**** [cert_activity] Should let the user accept every cert
+- [ ] Each certificate must be accepted by user
+**** [cert_list] Handle certificate list in SettingsActivity
+**** [host_list] Handle Host list in SettingsActivity
+- [ ] Should see a list of trusted hosts
+- [ ] Click on it and, after a confirmation, remove it and refresh the list
+**** [printer_ip] Should have IP in printer list
+- [ ] as "Printer (IP)" in PrinterList.PrinterToStr
+  Could we have cups admin port ? through an IPP request ?
+- [ ] Unit test the PrinterList.PrinterToStr function  function
+- [ ] HostNotVerifiedActivity is not really a dialog
+  Its theme should be defined by
+  android:theme="@style/AndroidCupsPrint.AlertDialog"
+
 **** TODO Correct project setup
      CLOCK: [2018-04-10 mar. 16:40]--[2018-04-10 mar. 17:00] =>  0:20
 - [X] Add a README.md file
@@ -23,3 +30,11 @@
 - [X] Rename activity_main2.xml
 - [ ] May rename application (Currently transparent-cups-client)
 - [ ] May use travis-ci and others here
+  https://docs.travis-ci.com/user/languages/android/
+**** DONE Main activity should finish if print successfull
+     CLOCK: [2018-04-11 mer. 14:09]--[2018-04-11 mer. 15:23] =>  1:14
+- [X] Check for result of IppResult : a PrintRequestResult
+  from app/src/main/java/org/cups4j/PrintRequestResult.java
+- [X] Should show printer URL in case of error but a text  
+- [X] MainActivity should be transparent
+- [X] "Impression en cours" should be bigger
