@@ -1,5 +1,6 @@
 2018-04-11  Jérôme Pasquier  <rainbru@free.fr>
 
+	* activity_main2.xml: renamed to activity_main.xml.
 	* styles.xml (Theme.Transparent): make the MainActivity transparent.
 	* MainActivity.java (waitAndFinish): wait 3 seconds and finish.
 
