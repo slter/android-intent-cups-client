@@ -3,7 +3,23 @@
 * v1.0.0
 ** v0.1.0
 *** v0.0.1
+**** Must fix for lint errors
+- [ ] Localization issues etc...
+**** More SettingActitivy settings
+- [ ] MainActivity waitAndFinish time could come from settingsActivity
+- [ ] transparency and background color of MainActivity
+- [ ] "Impression en cours" text size
+**** TODO Main activity should finish if print successfull
+     CLOCK: [2018-04-11 mer. 14:09]--[2018-04-11 mer. 15:23] =>  1:14
+- [X] Check for result of IppResult : a PrintRequestResult
+  from app/src/main/java/org/cups4j/PrintRequestResult.java
+- [X] Should show printer URL in case of error but a text  
+- [X] MainActivity should be transparent
+- [X] "Impression en cours" should be bigger
 **** TODO Correct project setup
+     CLOCK: [2018-04-10 mar. 16:40]--[2018-04-10 mar. 17:00] =>  0:20
 - [X] Add a README.md file
-- [ ] Add a GPLv3 licence file
-- [ ) May rename application
+- [X] Add a GPLv3 licence file
+- [X] Rename activity_main2.xml
+- [ ] May rename application (Currently transparent-cups-client)
+- [ ] May use travis-ci and others here

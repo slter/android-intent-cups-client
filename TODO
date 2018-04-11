@@ -10,6 +10,8 @@ android-intent-cups-client - GPLv3 - android print inent.
 
 
 * v0.0.0-1 (Mar. 10 Apr. 2017 - ???) SLOC ?,??? FT ??:?? UT ???
-- (3) Make the MainActivity transparent
+- (5) Change MainActivity text size
+- Renamed activity_main2.xml
+- Make the MainActivity transparent
 - MainActivity wait 3 seconds and finish
 - Add basic README and COPYING   
