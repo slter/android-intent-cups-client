@@ -34,6 +34,10 @@
   - [ ] travis is supported
   https://docs.travis-ci.com/user/languages/android/
   - [ ] Maybe coverity scan ?, codecov and codacy
+
+- [ ] We have a failling InstrumentedTest
+  org.rainbrurpg.transparentcupsclient.ExampleInstrumentedTest > useAppContext[SM-T580 - 7.0] FAILED 
+        org.junit.ComparisonFailure: expected:<...inbrurpg.transparent[printing]> but was:<...inbrurpg.tran
 **** DONE Main activity should finish if print successfull
      CLOCK: [2018-04-11 mer. 14:09]--[2018-04-11 mer. 15:23] =>  1:14
 - [X] Check for result of IppResult : a PrintRequestResult
