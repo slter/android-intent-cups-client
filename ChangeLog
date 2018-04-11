@@ -1,5 +1,7 @@
 2018-04-11  Jérôme Pasquier  <rainbru@free.fr>
 
+	* .travis.yml (components): add armeabi-v7a component install.
+	* .travis.yml (before_script): fix target id when creating avd.
 	* .travis.yml: add script value.
 	* .travis.yml: add travis-ci support.
 	* activity_main.xml (android:textSize): change text size.
