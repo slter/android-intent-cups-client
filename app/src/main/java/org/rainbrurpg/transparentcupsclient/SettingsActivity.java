@@ -108,8 +108,9 @@ public class SettingsActivity extends AppCompatPreferenceActivity{
 			String h = tmpUri.getHost();
 			Context ctx = CupsPrintApp.getInstance()
 			    .getApplicationContext();
-			if (!HostNotVerifiedActivity.isHostnameTrusted(ctx, h)) {
-			    Intent intent=new Intent(ctx, HostNotVerifiedActivity.
+			if (!HostNotVerifiedActivity.isHostnameTrusted(ctx, h)){
+			    Intent intent=new Intent(ctx,
+						     HostNotVerifiedActivity.
 						     class);
 			    intent.putExtra(HostNotVerifiedActivity.KEY_HOST, h);
 			    ctx.startActivity(intent);

@@ -11,4 +11,4 @@ android-intent-cups-client - GPLv3 - android print inent.
    
 
 * v0.0.0-2 (11 Apr. 2017 - ???) SLOC ?,??? FT ?:?? UT ???
-
+- Prevent HostNotVerifiedActivity for null hostname

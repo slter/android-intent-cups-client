@@ -1,3 +1,8 @@
+2018-04-12  Jérôme Pasquier  <rainbru@free.fr>
+
+	* HostNotVerifiedActivity.java (isHostnameTrusted): return false if
+	hostname is null to avoid activity.
+
 2018-04-11  Jérôme Pasquier  <rainbru@free.fr>
 
 	* .travis.yml (components): add armeabi-v7a component install.

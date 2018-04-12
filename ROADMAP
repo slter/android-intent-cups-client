@@ -23,11 +23,19 @@
   Its theme should be defined by
   android:theme="@style/AndroidCupsPrint.AlertDialog"
 **** TODO Correct project setup
+     CLOCK: [2018-04-12 jeu. 16:26]--[2018-04-12 jeu. 16:32] =>  0:06
      CLOCK: [2018-04-11 mer. 16:48]--[2018-04-11 mer. 17:41] =>  0:53
      CLOCK: [2018-04-10 mar. 16:40]--[2018-04-10 mar. 17:00] =>  0:20
 - [X] Add a README.md file
 - [X] Add a GPLv3 licence file
 - [X] Rename activity_main2.xml
+- [X] We have an error when asking to trust null host
+  After a complete reinstall
+
+- [ ] Must add screenshots to README.md
+- [ ] We should add a "Host not trusted" error if the we try to print with
+  an untrusted host
+
 - [ ] May rename application (Currently transparent-cups-client)
   Drawn name could be "CUPS intent"
 - [ ] May use travis-ci and others here

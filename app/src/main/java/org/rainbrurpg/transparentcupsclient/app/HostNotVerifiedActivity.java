@@ -32,6 +32,11 @@ public class HostNotVerifiedActivity extends Activity {
      *         or if unknown
      */
     public static boolean isHostnameTrusted(Context context, String hostname) {
+	// Do not show the trus activity if null hostname
+	if (hostname == null) {
+	    return false;
+	}
+
 	boolean t = context.getSharedPreferences(HOSTS_FILE, MODE_PRIVATE).
 	    getBoolean(hostname, false);
 	L.d("Checking isHostnameTrusted for " + hostname + " : " + t);
